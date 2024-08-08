@@ -34,7 +34,7 @@ def open_mf():
     register.grid(row=1, column=0, padx=20, pady=20)
 
     appointment = Button(
-        win, width=40, text='APPLY FOR APPOINTMENT', font=('arial', 20, 'bold'))
+        win, width=40, text='APPLY FOR APPOINTMENT', font=('arial', 20, 'bold'),command=appointment())
     appointment.grid(row=2, column=0, padx=20, pady=20)
 
     search = Button(win, width=40, text='SEARCH FOR APPOINTMENTS',
@@ -44,6 +44,16 @@ def open_mf():
     quit_button = Button(win, width=40, text='QUIT', font=(
         'arial', 20, 'bold'), command=win.destroy)
     quit_button.grid(row=4, column=0, padx=20, pady=20)
-
+    
     win.mainloop()
     
+    def appointment():    
+        win1=Tk()
+        win1.geometry('720x800')
+        win1.title('APPLY FOR APPOINTMENT')
+        label = Label(win1, text='APPLY FOR APPOINTMENT',
+                      font=('arial', 20, 'bold'))
+        appointment.grid(row=2, column=0, padx=20, pady=20)
+        
+        
+        win1.mainloop()
