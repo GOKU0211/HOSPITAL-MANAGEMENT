@@ -13,7 +13,7 @@ def open_mf():
     count = 0
     display_text = ''
     label = Label(win, text=display_text, fg='black', font=('Helvetica', 30))
-    label.pack(pady=0)
+    label.grid(row=2, column=2, pady=100)
 
 
     def slider():
@@ -37,7 +37,7 @@ def open_mf():
     register.grid(row=2,column=2,pady=100)
     
     appointment = Button(win,width=40, text='APPLY FOR APPOINTMENT',font=('arial', 20, 'bold'))
-    
+    appointment.grid(row=2, column=2, pady=150)
     
     search=Button(win,width=40,text='SEARCH FOR APPOINTMENTS',font=('arial', 20, 'bold'))
     

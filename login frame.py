@@ -57,9 +57,9 @@ but1 = Button(log, text='login', height=3, width=30, command=lambda:{get()})
 but1.place(x=250, y=600)
 
 
+# calling main window from mainframe.py
+mf.open_mf()
+
 
 log.mainloop()
-
-#calling main window from mainframe.py
-
 
